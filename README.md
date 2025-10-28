@@ -1,49 +1,42 @@
-Mini Compiler (Lexical → Syntax → Semantic → TAC → Assembly-Like)
+# Mini Compiler (Lexical → Syntax → Semantic → TAC → Assembly-Like)
 
 This mini compiler demonstrates the fundamental phases of compiler construction by compiling a simplified C-style language. It performs lexical analysis, parsing, symbol table management, intermediate (three-address) code generation, and produces assembly-like output.
 
-✨ Features
 
-✅ Lexical Analysis (tokens: keywords, identifiers, constants, operators, punctuation, comments)
+## ✨ Features
 
-✅ Syntax Parsing using PLY (YACC)
-
-✅ Expression evaluation
-
-✅ Variable declarations and assignments
-
-✅ if and while control structures
-
-✅ print() statements
-
-✅ Symbol Table maintenance
-
-✅ Three-Address Code (TAC) generation
-
-✅ Assembly-style code output
-
+✅ Lexical Analysis (keywords, identifiers, constants, operators, punctuation, comments)\
+✅ Syntax Parsing using PLY (YACC)\
+✅ Expression evaluation\
+✅ Variable declarations and assignments\
+✅ `if` and `while` control structures\
+✅ `print()` statements\
+✅ Symbol Table maintenance\
+✅ Three-Address Code (TAC) generation\
+✅ Assembly-style instruction output\
 ✅ Basic error handling
 
-🧠 Language Support
 
-The compiler accepts code similar to C:
+## 🧠 Language Support
+
+The compiler accepts C-style syntax:
 
 int a = 5 + 3;
 print(a);
 
 if (a > b) {
-print(b);
+    print(b);
 }
 
 while (c > 0) {
-print(c);
+    print(c);
 }
 
-Supports:
+Supported:
 
 Variables
 
-Arithmetic (+ - \* /)
+Arithmetic (+, -, *, /)
 
 Comparison (> < >= <= ==)
 
@@ -51,21 +44,22 @@ Control flow
 
 Looping
 
-Nested statements
+Nested blocks
 
 🛠️ Technology Used
-Component Tool
-Lexer PLY (Lex)
-Parser PLY (YACC)
-Language Python
-Platform CLI
+Component	Tool
+Lexer	PLY (Lex)
+Parser	PLY (YACC)
+Language	Python
+Platform	CLI
 
 📁 Project Structure
 
 MiniCompiler_Project/
 ├── parser.py
 ├── input.txt
-├── (generated files: parser.out, parsetab.py)
+├── parser.out
+├── parsetab.py
 └── README.md
 
 ▶️ How to Run
@@ -103,4 +97,6 @@ t1 = 5 + 3
 t2 = t1 - 2
 ...
 
+✅ Conclusion
 Overall, this mini compiler illustrates how real-world compilers translate high-level code into intermediate and assembly-like representations, reinforcing key concepts in compiler architecture.
+
