@@ -59,7 +59,7 @@ Nested blocks
 | Language  | Python     |
 | Platform  | CLI        |
 
-📁 Project Structure
+## 📁 Project Structure
 
 MiniCompiler_Project/
 ├── parser.py
