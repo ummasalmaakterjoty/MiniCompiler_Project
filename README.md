@@ -59,20 +59,17 @@ Nested blocks
 | Language  | Python     |
 | Platform  | CLI        |
 
-```
 ## 📁 Project Structure
 
+```
 MiniCompiler_Project/
 
 ├── parser.py
-
 ├── input.txt
-
 ├── parser.out
-
 ├── parsetab.py
-
 └── README.md
+```
 
 ▶️ How to Run
 
@@ -110,4 +107,7 @@ t2 = t1 - 2
 ✅ Conclusion
 
 Overall, this mini compiler illustrates how real-world compilers translate high-level code into intermediate and assembly-like representations, reinforcing key concepts in compiler architecture.
+
+```
+
 ```
