@@ -96,18 +96,21 @@ Assembly-like representation (labels, jumps)
 ✅ Parsing completed successfully!
 
 --- SYMBOL TABLE ---
+
+```
 a = t7
 b = t8
+```
 
 --- THREE ADDRESS CODE ---
+
+```
 t1 = 5 + 3
 t2 = t1 - 2
-...
+```
 
 ✅ Conclusion
 
 Overall, this mini compiler illustrates how real-world compilers translate high-level code into intermediate and assembly-like representations, reinforcing key concepts in compiler architecture.
-
-```
 
 ```
