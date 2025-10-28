@@ -1,0 +1,28 @@
+int a = 5 + 3;
+int b = a - 2;
+int c = 10;
+
+
+print(a);
+print(b);
+print(c);
+
+
+a = a - 1;
+b = b + 1;
+c = c - 2;
+
+
+if (a > b) {
+    a = a + b;
+} else {
+    b = b + a;
+}
+
+
+while (c > 0) {
+    print(a);
+    print(b);
+    print(c);
+    c = c - 1;
+}
