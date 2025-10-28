@@ -2,6 +2,7 @@
 
 This mini compiler demonstrates the fundamental phases of compiler construction by compiling a simplified C-style language. It performs lexical analysis, parsing, symbol table management, intermediate (three-address) code generation, and produces assembly-like output.
 
+---
 
 ## ✨ Features
 
@@ -16,11 +17,13 @@ This mini compiler demonstrates the fundamental phases of compiler construction 
 ✅ Assembly-style instruction output\
 ✅ Basic error handling
 
+---
 
 ## 🧠 Language Support
 
 The compiler accepts C-style syntax:
 
+```c
 int a = 5 + 3;
 print(a);
 
@@ -31,12 +34,13 @@ if (a > b) {
 while (c > 0) {
     print(c);
 }
+```
 
 Supported:
 
 Variables
 
-Arithmetic (+, -, *, /)
+Arithmetic (+, -, \*, /)
 
 Comparison (> < >= <= ==)
 
@@ -47,11 +51,13 @@ Looping
 Nested blocks
 
 🛠️ Technology Used
-Component	Tool
-Lexer	PLY (Lex)
-Parser	PLY (YACC)
-Language	Python
-Platform	CLI
+
+| Component | Tool       |
+| --------- | ---------- |
+| Lexer     | PLY (Lex)  |
+| Parser    | PLY (YACC) |
+| Language  | Python     |
+| Platform  | CLI        |
 
 📁 Project Structure
 
@@ -84,8 +90,6 @@ Three-Address Code (TAC)
 
 Assembly-like representation (labels, jumps)
 
-Example:
-
 ✅ Parsing completed successfully!
 
 --- SYMBOL TABLE ---
@@ -98,5 +102,5 @@ t2 = t1 - 2
 ...
 
 ✅ Conclusion
-Overall, this mini compiler illustrates how real-world compilers translate high-level code into intermediate and assembly-like representations, reinforcing key concepts in compiler architecture.
 
+Overall, this mini compiler illustrates how real-world compilers translate high-level code into intermediate and assembly-like representations, reinforcing key concepts in compiler architecture.
